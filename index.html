@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="tasks">
+        <header class="header">
+            <p class="elemento__data">Hoje é dia <br><span class="data" id="data">06/11, Segunda</span><br></p>
+            <span class="quantidade__tasks" id="quantidade__tasks">Você tem 2 tasks</span>
+        </header>
+        <main class="conteudo__tasks">
+            <ul class="lista__tasks" id="lista-de-tasks">
+            </ul>
+        </main>
+    </section>
+    <section class="add__task" id="section-add-task">
+        <input type="text" class="input__task" id="input-task">
+        <i class="fa-solid fa-circle-plus icons" id="button-add-task"></i>
+        <p class="aviso__existe">Essa task já existe</p>
+    </section>
+    <section class="edit__task" id="edit-task">
+        <h1>Edite sua tarefa:</h1>
+        <div class="editar">
+            <input type="text" class="input__edit" id="input-edit">
+        </div>
+        <i class="fa-sharp fa-solid fa-circle-check icons" id="confirma-edit"></i>
+    </section>
+</body>
+<script src="js/script.js"></script>
+<script src="js/outros.js"></script>
+</html>

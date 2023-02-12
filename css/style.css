@@ -1,0 +1,147 @@
+:root{
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0;
+
+    flex-direction: column;
+}
+
+.tasks{
+    width: 40%;
+
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1em;
+
+    border-bottom: 1px solid black;
+}
+
+.elemento__data{
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.data{
+    font-size: 28px;
+}
+
+.quantidade__tasks{
+    font-style: italic;
+    font-size: 18px;
+}
+
+.conteudo__tasks{
+    min-height: 20vh;
+}
+
+.lista__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em;
+
+    position: relative;
+}
+
+.icons{
+    font-size: 25px;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
+
+.item__conteudo{
+    display: flex;
+    gap: 0.5em;
+
+    align-items: center;
+}
+
+.task{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.crud__icons{
+    display: flex;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.add__task{
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 0.6rem;
+    margin-top: 1em;
+
+    position: relative;
+}
+
+.input__task{
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.fa-circle-plus{
+    font-size: 2em;
+}
+
+.aviso__existe{
+    position: absolute;
+    bottom: -1.4em;
+
+    display: none;
+}
+
+.edit__task{
+    padding: 1em;
+    border: 2px solid black;
+
+    text-align: center;
+
+    position: fixed;
+    right: 3em;
+
+    display: none;
+}
+
+.input__edit{
+    width: 100%;
+    border: 0;
+
+    margin-top: 1em;
+
+    font-size: 20px;
+}
+
+.input__edit:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.fa-circle-check{
+    position: absolute;
+    right: 1em;
+    bottom: -1.5em;
+}
